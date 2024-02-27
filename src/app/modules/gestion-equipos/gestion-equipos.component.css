@@ -1,0 +1,15 @@
+.gestion-datos {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+td,
+th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.mat-sort-header-container {
+    justify-content: center !important;
+}

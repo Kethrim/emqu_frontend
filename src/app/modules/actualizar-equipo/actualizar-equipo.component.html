@@ -1,0 +1,24 @@
+<div class="component">
+    <p class="text-center fs-1 mt-5" (click)="redirigir()">Gestión de equipos</p>
+    <p class="text-center fs-4 my-4 ">
+        Actualización
+    </p>
+    <form [formGroup]="actualizacionForm" (ngSubmit)="onSubmit()" class="row g-3" novalidate>
+        <div class="row justify-content-center ">
+            <div class="col-4 align-self-center ">
+                <div class="my-4">
+                    <label for="dir-equipo" class="visually-hidden ">Dirección IPV4</label>
+                    <input type="text" class="form-control" formControlName="dir" id="dir-equipo" placeholder="Dirección IPV4" readonly>
+                </div>
+                <div class="mb-4">
+                    <label for="nombre-equipo" class="visually-hidden ">Nombre</label>
+                    <input type="text" class="form-control" minlength="2" formControlName="nombre" id="nombre-equipo" placeholder="Nombre" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary " [disabled]="actualizacionForm.invalid">Actualizar</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
